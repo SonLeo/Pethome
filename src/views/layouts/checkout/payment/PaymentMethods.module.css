@@ -1,0 +1,54 @@
+.payment-container {
+    margin-top: 20px;
+}
+
+.payment-heading {
+    font-size: 22px;
+}
+
+.payment-method-item {
+    display: inline-block;
+    border: 1px solid #ccc;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.payment-method-item~.payment-method-item {
+    margin-left: 12px;
+}
+
+.payment-method-item input {
+    display: none;
+}
+
+.payment-method-item--selected {
+    border-color: #362116;
+    color: #362116;
+}
+
+.payment-method {
+    position: relative;
+    cursor: pointer;
+    padding: 8px 16px;
+}
+
+.payment-method__tick {
+    position: absolute;
+    right: 1px;
+    bottom: 4px;
+    width: 10px;
+    height: 10px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.payment-method__tick::before {
+    content: "";
+    position: absolute;
+    left: -9px;
+    top: -6px;
+    border-width: 20px 20px 0 0;
+    border-style: solid;
+    border-color: transparent #362116 transparent transparent;
+    z-index: -1;
+}

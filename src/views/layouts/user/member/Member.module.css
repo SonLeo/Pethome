@@ -1,0 +1,49 @@
+.member {
+  text-align: center;  
+  border: 1px solid #362116;
+  border-radius: 16px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+  font-size: 20px;
+  height: 340px;
+}
+
+.member-avatar {
+    border: 1px solid #362116;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin: 32px auto 12px;
+}
+
+.member-avatar img {
+    width: 100%;
+    padding: 10px;
+}
+
+.member-name {
+    text-transform: uppercase;
+    color: #362116;
+    font-weight: 500;
+}
+
+.member-info-list {
+    display: flex;
+    padding: 0;
+}
+
+.member-welcome {
+    margin-bottom: 20px;
+}
+
+.member-info-item {
+    flex: 1;
+}
+
+p.member-info-item-title {
+    margin: 0;
+}
+
+.member-info-item img {
+    width: 70px;
+    height: 70px;
+}

@@ -1,0 +1,36 @@
+{
+  "name": "pets-home",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "mockapi": "npx json-server --watch src/database/database.json --port=3001 --routes=src/database/routes.json --middlewares src/middleware/searchMiddleware.js"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-brands-svg-icons": "^6.5.1",
+    "@fortawesome/free-regular-svg-icons": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "axios": "^1.4.0",
+    "bootstrap": "^5.3.1",
+    "eslint": "8.47.0",
+    "eslint-config-next": "13.4.16",
+    "formik": "^2.4.3",
+    "fuzzysearch": "^1.0.3",
+    "json-server": "^0.17.4",
+    "next": "13.4.16",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-owl-carousel": "^2.3.3",
+    "react-redux": "^8.1.2",
+    "redux": "^4.2.1",
+    "redux-saga": "^1.2.3",
+    "shortid": "^2.2.16",
+    "swiper": "^11.0.6",
+    "uuid": "^9.0.0"
+  }
+}

@@ -1,0 +1,21 @@
+.banner-slider {
+    width: 100%;
+    position: relative;
+}
+
+.slide {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-pagination-custome .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+}
+
+.swiper-pagination-custome .swiper-pagination-bullet-active {
+  width: 30px;
+}

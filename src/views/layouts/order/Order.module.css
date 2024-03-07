@@ -1,0 +1,169 @@
+.order-heading {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 32px;
+    cursor: default;
+    position: relative;
+}
+
+.order-heading::after {
+    left: 50%;
+    transform: translate(-50%, 0%);
+    bottom: -6px;
+    content: "";
+    width: 0;
+    height: 2px;
+    display: inline-block;
+    background: #362116;
+    position: absolute;
+    transition: width 0.3s ease;
+}
+
+.order-heading:hover::after {
+    width: 150px;
+}
+
+.tab-list {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    overflow: hidden;
+    height: 55px;
+    font-size: 16px;
+    background-color: #eee;
+    margin-bottom: 12px;
+    padding: 0 20px;
+    margin: 8px auto 20px;
+    font-weight: 500;
+    text-align: center;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.tab {
+    width: 20%;
+    line-height: 55px;
+}
+
+.tab~.tab {
+    border-left: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.tab:hover,
+.tab-active {
+    color: #74c05e;
+    cursor: pointer;
+}
+
+.empty-tab {
+    color: #a0a0a0;
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.order-item {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    padding: 20px 60px;
+}
+
+.order-item ~ .order-item {
+    margin-top: 12px;
+}
+
+.order-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    border-bottom: 1px solid #eee;
+}
+
+.order-title {
+    width: 40%;
+    font-size: 22px;
+}
+
+.order-date {
+    text-align: center;
+    width: 30%;
+}
+
+.order-status {
+    text-align: right;
+    width: 30%;
+    color: #74c05e;
+}
+
+.order-product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding: 12px 0;
+}
+
+.order-product h4 {
+    margin-bottom: 0;
+}
+
+.product-detail {
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.product-calculate {
+    width: 30%;
+    text-align: center;
+}
+
+.product-amount {
+    width: 30%;
+    text-align: right;
+}
+
+.product-img {
+    width: 80px;
+    height: 80px;
+    margin-right: 16px;
+}
+
+.product-title {
+    font-size: 16px;
+}
+
+.calculate-icon {
+    font-size: 12px;
+    padding: 0 8px;
+}
+
+.order-action {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.order-total {
+    font-weight: 500;
+    color: #362116;
+}
+
+.btn-action {
+    min-width: 100px;
+    outline: none;
+    border: 2px solid #362116;
+    background-color: #fff;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #362116;
+    padding: 4px 0;
+}
+
+.btn-action:hover {
+    background-color: #362116;
+    color: #fff;
+}

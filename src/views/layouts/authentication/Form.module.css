@@ -1,0 +1,141 @@
+.main {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 40px 0;
+}
+
+.form {
+    background-color: #fff;
+    margin: auto;
+    padding: 32px 24px;
+    width: 360px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+}
+
+.form .heading {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 32px;
+    cursor: default;
+    position: relative;
+}
+
+.form .heading::after {
+    left: 50%;
+    transform: translate(-50%, 0%);
+    bottom: -6px;
+    content: "";
+    width: 0;
+    height: 2px;
+    display: inline-block;
+    background: #362116;
+    position: absolute;
+    transition: width 0.3s ease;
+}
+
+.form .heading:hover::after {
+    width: 150px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-weight: 500;
+    font-size: 20px;
+    padding-bottom: 4px;
+}
+
+.form-group .form-control {
+    padding: 8px 12px;
+    height: 40px;
+    border: 1px solid #b3b3b3;
+    outline: none;
+    border-radius: 3px;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.form-group .form-control:focus,
+.form-group .form-control:hover {
+    border-color: #362116;
+}
+
+.form-message {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding: 4px 0 0;
+}
+
+.form-submit {
+    width: 100%;
+    cursor: pointer;
+    color: #fff;
+    background-color: #362116;
+    border-radius: 8px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    margin-top: 12px;
+    padding: 12px 16px;
+}
+
+.form-submit:hover {
+    opacity: 0.8;
+}
+
+.form-group.invalid .form-control {
+    border-color: #f33a58;
+}
+
+.form .required,
+.form-group.invalid .form-message {
+    color: #f33a58;
+}
+
+.forgot-password {
+    text-align: center;
+    margin: 20px;
+}
+
+.forgot-password a {
+    color: #333;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.forgot-password:hover a {
+    opacity: 1;
+    color: #74c05e;
+    font-weight: 600;
+}
+
+.sign-in,
+.sign-up {
+    padding-top: 20px;
+    border-top: 2px solid rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.sign-in a,
+.sign-up a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #74c05e;
+    opacity: 0.8;
+}
+
+.sign-in:hover a,
+.sign-up:hover a {
+    opacity: 1;
+}
+
+.sign-in {
+    margin-top: 28px;
+}

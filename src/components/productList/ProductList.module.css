@@ -1,0 +1,13 @@
+.products {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product-wrapper {
+    padding: 10px;
+}
+
+.products img {
+    width: 100%;
+}

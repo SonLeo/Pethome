@@ -1,0 +1,87 @@
+.discount-heading {
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+
+.form-group-voucher {
+    padding: 0 30px;
+}
+
+.voucher-control {
+    display: flex;
+}
+
+.voucher-input {
+    flex: 1;
+    margin-right: 8px;
+    padding: 8px 12px;
+    height: 40px;
+    border: 1px solid #b3b3b3;
+    outline: none;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.form-btn {
+    border: none;
+    outline: none;
+    background-color: #fff;
+    border: 2px solid #362116;
+    color: #362116;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-weight: 500;
+}
+
+.form-btn:hover {
+    background-color: #362116;
+    color: #fff;
+}
+
+.form-toggle {
+    width: 129px;
+}
+
+.form-submit {
+    margin-right: 8px;
+}
+
+.voucher-list {
+    padding: 0;
+    margin-top: 8px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.voucher-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.voucher-list li label {
+    display: flex;
+}
+
+.voucher-radio {
+    margin: 0 16px;
+}
+
+.voucher-content {
+    flex: 1;
+}
+
+.voucher-title {
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+
+.voucher-detail {
+    margin-bottom: 0;
+}
+
+.no-voucher-message {
+    text-align: center;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.3);
+    padding: 30px 0;
+}

@@ -1,0 +1,128 @@
+.checkout-heading {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 32px;
+    cursor: default;
+    position: relative;
+}
+
+.checkout-heading::after {
+    left: 50%;
+    transform: translate(-50%, 0%);
+    bottom: -6px;
+    content: "";
+    width: 0;
+    height: 2px;
+    display: inline-block;
+    background: #362116;
+    position: absolute;
+    transition: width 0.3s ease;
+}
+
+.checkout-heading:hover::after {
+    width: 150px;
+}
+
+.checkout-sub-heading {
+    font-size: 22px;
+}
+
+.product-list {
+    padding: 0 30px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.product-item {
+    padding: 12px 0 6px;
+    display: flex;
+    align-items: center;
+}
+
+.product-image {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.product-image img {
+    width: 100%;
+}
+
+.product-name {
+    font-size: 16px;
+}
+
+.product-icon {
+    font-size: 12px;
+    padding: 0 4px;
+}
+
+.product-amount {
+    color: #74c05e;
+    font-weight: 500;
+}
+
+.calculate {
+    padding: 0 30px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.discount-section {
+    padding-bottom: 20px;
+}
+
+.final-total {
+    padding: 0 30px 20px;
+}
+
+.total,
+.summary-item,
+.final-total,
+.discount-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.summary-item span,
+.final-total span,
+.discount-section span {
+    line-height: 28px;
+    font-weight: 500;
+}
+
+.summary-value,
+.discount-value,
+.final-total-value {
+    color: #74c05e;
+}
+
+.actions {
+    padding: 0 30px;
+}
+
+.back-to-cart a {
+    color: #2b78a0;
+    text-decoration: none;
+    line-height: 40px;
+}
+
+.back-to-cart a:hover {
+    color: #338dbc;
+    font-weight: 500;
+}
+
+.checkout-btn {
+    background-color: #120b07;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.checkout-btn:hover {
+    background-color: #362116;
+}

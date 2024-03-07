@@ -1,0 +1,258 @@
+.cart-heading {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 32px;
+    cursor: default;
+    position: relative;
+}
+
+.cart-heading::after {
+    left: 50%;
+    transform: translate(-50%, 0%);
+    bottom: -6px;
+    content: "";
+    width: 0;
+    height: 2px;
+    display: inline-block;
+    background: #362116;
+    position: absolute;
+    transition: width 0.3s ease;
+}
+
+.cart-heading:hover::after {
+    width: 150px;
+}
+
+.list-head {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    overflow: hidden;
+    height: 55px;
+    font-size: 16px;
+    background-color: #eee;
+    margin-bottom: 12px;
+    padding: 0 20px;
+    margin: 8px auto 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.cart-empty {
+    color: #a0a0a0;
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.cart-item {
+    display: flex;
+    padding: 10px 20px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.cart-item:last-child {
+    margin-bottom: 0;
+}
+
+.product-details,
+.head-item:first-child {
+    width: 42%;
+    border-right: 1px solid #ccc;
+}
+
+.product-price,
+.product-amount,
+.product-quantity,
+.head-item:nth-child(2),
+.head-item:nth-child(4),
+.head-item:nth-child(3) {
+    width: 16%;
+    border-right: 1px solid #ccc;
+}
+
+.product-action,
+.head-item:last-child {
+    width: 10%;
+}
+
+.product-details {
+    display: flex;
+    align-items: center;
+}
+
+.product-details a {
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.product-name {
+    font-size: 16px;
+    line-height: 21px;
+    height: 21px;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.product-link {
+    display: flex;
+    align-items: center;
+    opacity: 0.8;
+}
+
+.product-link:hover {
+    opacity: 1;
+    color: #74c05e;
+}
+
+.product-check,
+.product-image {
+    margin-right: 12px;
+}
+
+.product-price,
+.product-action,
+.product-amount,
+.product-quantity {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-quantity input {
+    display: inline-block;
+    text-align: center;
+    width: 52px;
+    padding: 2px;
+    border: 1px solid #ccc;
+    outline: none;
+    height: 32px;
+    line-height: 3px;
+}
+
+.price-old {
+    font-size: 16px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.price-new {
+    font-size: 16px;
+    font-weight: 500;
+    color: #362116;
+}
+
+.btn {
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    font-size: 20px;
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+}
+
+.quantity-decrease {
+    border-right: none;
+    font-size: 12px;
+}
+
+.quantity-increase {
+    border-left: none;
+    font-size: 12px;
+}
+
+.delete {
+    height: 32px;
+    border: none;
+    outline: none;
+    background-color: #df0303c4;
+    color: #fff;
+    font-size: 16px;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.delete:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.purchase {
+    position: sticky;
+    position: -webkit-sticky;
+    bottom: 0;
+    background-color: #fff;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    z-index: 9;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    margin-top: 40px;
+}
+
+.select-status {
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 8px;
+    font-style: italic;
+    color: #a0a0a0;
+    cursor: default;
+}
+
+.purchase-details {
+    padding-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.select-all,
+.select-all label,
+.purchase-select-all,
+.purchase-select-all label {
+    cursor: pointer;
+}
+
+.delete-checked {
+    color: #df0303c4;
+    width: 200px;
+}
+
+.delete-checked:hover {
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.purchase-amount {
+    color:#362116;
+    font-weight: 500;
+}
+
+.purchase-amount-details {
+    color: #74c05e;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.purchase-btn {
+    border: none;
+    outline: none;
+    background-color: #362116;
+    color: #fff;
+    border-radius: 4px;
+    padding: 8px 12px;
+}
+
+.purchase-btn:hover {
+    background-color: #633711;
+}

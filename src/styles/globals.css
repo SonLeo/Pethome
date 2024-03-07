@@ -1,0 +1,29 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.section ~ .section {
+  margin: 40px 0 0;
+}
+
+/* variables.css */
+:root {
+  --color-bg-primary: #362116;
+  --color-bg-secondary: #120b07;
+  --color-bg-hover: #8b572a;
+  --color-border-default: #191919;
+  --color-text-primary: #fff;
+  --color-text-secondary: #000;
+  --common-transition: 0.2s;
+}

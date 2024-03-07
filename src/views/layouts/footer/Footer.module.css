@@ -1,0 +1,140 @@
+.footer {
+    color: #888;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-social {
+    background-color: #362116;
+}
+
+.footer-main {
+    background-color: #191919;
+    padding: 40px 0 20px;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.social {
+    position: relative;
+    width: 22px;
+    height: 22px;
+    margin: 10px 8px;
+}
+
+.social:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.social a {
+    display: block;
+    width: 24px;
+    height: 24px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.social:hover a {
+    border: 1px solid #74c05e;
+}
+
+.footer-heading {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.footer-sub-heading {
+    color: #fff;
+    font-weight: 500;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #888;
+}
+
+.footer a:hover {
+    color: #74c05e;
+    font-weight: 500;
+}
+
+.footer-policy-payment {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-payment {
+    width: 66%;
+}
+
+.footer-registered-business {
+    margin-bottom: 12px;
+}
+
+.footer-registered-business img {
+    width: 100%;
+}
+
+.footer-copyright {
+    text-align: center;
+    background-color: #0f0f0f;
+    padding: 12px 0;
+    font-size: 16px;
+}
+
+.back-to-top {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    height: 36px;
+    width: 36px;
+    border-radius: 4px;
+    background-color: #362116;
+    display: none;
+}
+
+.back-to-top-icon {
+    width: 24px;
+    height: 24px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-top: 6px;
+}
+
+.back-to-top-icon:hover {
+    opacity: 0.6;
+}
+
+.show {
+    display: block !important;
+}
+
+footer .back-to-top.show {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 999;
+}

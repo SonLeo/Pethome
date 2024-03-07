@@ -1,0 +1,54 @@
+
+.product-option-heading {
+    font-size: 18px;
+}
+
+.product-option-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product-option-item {
+    display: inline-block;
+    border: 1px solid #ccc;
+    color: #aaa;
+    cursor: pointer;
+    margin: 6px;
+}
+
+.product-option-item input {
+    display: none;
+}
+
+.product-option-item--selected {
+    border-color: #362116;
+    color: #362116;
+}
+
+.product-option {
+    position: relative;
+    cursor: pointer;
+    padding: 4px 16px;
+}
+
+.option-selected {
+    position: absolute;
+    right: 1px;
+    bottom: 4px;
+    width: 10px;
+    height: 10px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.option-selected::before {
+    content: "";
+    position: absolute;
+    left: -9px;
+    top: -6px;
+    border-width: 20px 20px 0 0;
+    border-style: solid;
+    border-color: transparent #362116 transparent transparent;
+    z-index: -1;
+}

@@ -1,0 +1,34 @@
+.no-order {
+    text-align: center;
+    color: #ccc;
+}
+
+.order-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-date,
+.order-amount {
+    font-weight: bold;
+}
+
+.order-products {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.order-products tr:nth-child(odd) {
+    background-color: #eee;
+}
+
+.order-products td {
+    text-align: center;
+    padding: 10px;
+}
+
+.product-name a {
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+}

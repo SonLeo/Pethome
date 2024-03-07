@@ -1,0 +1,34 @@
+.product-rating {
+    font-size: 1rem;
+    transform-origin: right;
+    margin: 4px 0 0 auto;
+    display: flex;
+}
+
+.star-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+
+.star {
+    color: #f59e0b;
+    display: block;
+    width: 16px;
+    height: 16px;
+}
+
+.stars__lit,
+.star--hollow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.stars__lit {
+    overflow: hidden;
+    top: 1px;
+}
